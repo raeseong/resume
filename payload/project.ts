@@ -12,9 +12,9 @@ const project: IProject.Payload = {
         { content: '미니게임 웹앱' },
         {
           content: '프로젝트 개요 링크',
-          href: 'https://superficial-crab-d02.notion.site/SuperSlap-fca506b272984c2a9471ee65bc9a3460'
+          href:
+            'https://superficial-crab-d02.notion.site/SuperSlap-fca506b272984c2a9471ee65bc9a3460',
         },
-
       ],
     },
     {
