@@ -1,8 +1,7 @@
 import profile from './profile';
 import introduce from './introduce';
 import skill from './skill';
-import experience from './experience';
-import openSource from './openSource';
+import career from './career';
 import project from './project';
 import presentation from './presentation';
 import education from './education';
@@ -16,7 +15,7 @@ import { IProfile } from '../component/profile/IProfile';
 import { IIntroduce } from '../component/introduce/IIntroduce';
 import { ISkill } from '../component/skill/ISkill';
 import { IOpenSource } from '../component/openSource/IOpenSource';
-import { IExperience } from '../component/experience/IExperience';
+import { ICareer } from '../component/experience/ICareer';
 import { IProject } from '../component/project/IProject';
 import { IPresentation } from '../component/presentation/IPresentation';
 import { IEducation } from '../component/education/IEducation';
@@ -29,8 +28,7 @@ const Payload: Payload = {
   profile,
   introduce,
   skill,
-  openSource,
-  experience,
+  career,
   project,
   presentation,
   article,
@@ -45,8 +43,8 @@ interface Payload {
   profile: IProfile.Payload;
   introduce: IIntroduce.Payload;
   skill: ISkill.Payload;
-  openSource: IOpenSource.Payload;
-  experience: IExperience.Payload;
+  openSource?: IOpenSource.Payload;
+  career: ICareer.Payload;
   project: IProject.Payload;
   presentation: IPresentation.Payload;
   education: IEducation.Payload;

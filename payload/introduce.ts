@@ -9,7 +9,7 @@ const introduce: IIntroduce.Payload = {
     '문제 해결 자체도 중요하지만 그 과정을 더 깊게 **탐구하고 이해하는 것을 좋아합니다.',
     '여러 의견이 나오고 커뮤니케이션을 통해 최적의 답을 찾아가는, **동료들과의 협업을 좋아합니다.',
   ],
-  sign: 'Love poem',
+  sign: 'Happiness',
   // sign: packageJson.author.name,
   // latestUpdated: '2019-07-24',
   latestUpdated: lastestUpdatedAt,

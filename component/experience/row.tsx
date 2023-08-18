@@ -3,12 +3,12 @@ import { PropsWithChildren } from 'react';
 import { Badge, Col, Row } from 'reactstrap';
 import { Style } from '../common/Style';
 import Util from '../common/Util';
-import { IExperience } from './IExperience';
+import { ICareer } from './ICareer';
 
 export default function ExperienceRow({
   item,
   index,
-}: PropsWithChildren<{ item: IExperience.Item; index: number }>) {
+}: PropsWithChildren<{ item: ICareer.Item; index: number }>) {
   return (
     <div>
       {index > 0 ? <hr /> : ''}

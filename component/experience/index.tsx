@@ -5,10 +5,10 @@ import { EmptyRowCol } from '../common';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
 import { Style } from '../common/Style';
 import Util from '../common/Util';
-import { IExperience } from './IExperience';
+import { ICareer } from './ICareer';
 import ExperienceRow from './row';
 
-type Payload = IExperience.Payload;
+type Payload = ICareer.Payload;
 
 export const Experience = {
   Component: ({ payload }: PropsWithChildren<{ payload: Payload }>) => {
@@ -37,7 +37,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
       <EmptyRowCol>
         <Row className="pb-3">
           <Col>
-            <h2 style={Style.blue}>EXPERIENCE {totalPeriod()}</h2>
+            <h2 style={Style.blue}>CAREER {totalPeriod()}</h2>
           </Col>
         </Row>
         {payload.list.map((item, index) => (
@@ -48,7 +48,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
   );
 }
 
-function getFormattingExperienceTotalDuration(payload: IExperience.Payload) {
+function getFormattingExperienceTotalDuration(payload: ICareer.Payload) {
   const durations = payload.list
     .map((item) => {
       return {

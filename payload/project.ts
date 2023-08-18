@@ -4,41 +4,29 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
-      title: 'Mashup API Development',
-      startedAt: '2018-02',
-      where: 'Foo Company',
+      title: 'SuperSlap',
+      startedAt: '2021-11',
+      endedAt: '2021-12',
+      where: 'SW사관학교 정글',
       descriptions: [
-        { content: 'Development and operation of Mashup API of Aggregation Layer' },
+        { content: '미니게임 웹앱' },
         {
-          content: 'Add Foo Feature in 2019',
-          weight: 'MEDIUM',
-          descriptions: [
-            { content: 'Integer ut libero eu libero mattis rutrum at at urna' },
-            { content: 'Integer non turpis ante' },
-          ],
+          content: '프로젝트 개요 링크',
+          href: 'https://superficial-crab-d02.notion.site/SuperSlap-fca506b272984c2a9471ee65bc9a3460'
         },
-        {
-          content: 'Launched Bar Service in 2018',
-          weight: 'MEDIUM',
-          descriptions: [
-            { content: 'Suspendisse vestibulum odio id libero facilisis gravida' },
-            {
-              content: 'In ipsum est, pellentesque vestibulum tortor eu, bibendum imperdiet metus',
-            },
-          ],
-        },
+
       ],
     },
     {
-      title: 'Lorem ipsum Project',
-      startedAt: '2016-10',
-      endedAt: '2017-11',
-      where: 'Bar Co., LTD.',
+      title: 'SW 사관학교 정글',
+      startedAt: '2021-08',
+      endedAt: '2021-12',
+      where: '카이스트 문지캠퍼스',
       descriptions: [
-        { content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' },
-        { content: 'Integer massa magna, feugiat commodo arcu sed, sagittis sollicitudin tortor' },
-        { content: 'Nullam diam ex, interdum nec lacus vel, ultrices pretium sapien' },
-        { content: 'Proin bibendum non nibh eu aliquet' },
+        { content: '알고리즘 문제풀이' },
+        { content: 'RB Tree, Malloc-Lab, Tiny Web Server' },
+        { content: 'pintOS' },
+        { content: '팀 프로젝트(SuperSlap)' },
       ],
     },
   ],

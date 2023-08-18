@@ -1,15 +1,15 @@
 import { ICommon } from '../common/ICommon';
 
-export declare namespace IExperience {
+export declare namespace ICareer {
   /**
    * ### Sample Rendering
    *
    * ![image](https://user-images.githubusercontent.com/8033320/78032558-27540200-73a0-11ea-83cd-3fd1cea68402.png)
    *
-   * @example https://github.com/uyu423/resume-nextjs/blob/master/payload/experience.ts
+   * @example https://github.com/uyu423/resume-nextjs/blob/master/payload/career.ts
    */
   export interface Payload extends ICommon.Payload {
-    /** ### Experience 데이터 목록 */
+    /** ### Career 데이터 목록 */
     list: Item[];
     /** ### 총 경력 기간 표시 유/무 */
     disableTotalPeriod?: boolean;
