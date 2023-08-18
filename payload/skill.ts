@@ -8,16 +8,16 @@ const backend: ISkill.Skill = {
       level: 3,
     },
     {
-      title: 'AWS',
+      title: 'TypeScript',
       level: 3,
     },
     {
-      title: 'PHP',
+      title: 'AWS',
       level: 2,
     },
     {
       title: 'Java',
-      level: 1,
+      level: 2,
     },
     {
       title: 'Python',
@@ -38,37 +38,11 @@ const database: ISkill.Skill = {
       level: 3,
     },
     {
-      title: 'Oracle',
-      level: 2,
-    },
-    {
       title: 'Redis',
       level: 2,
     },
     {
       title: 'MongoDB',
-      level: 1,
-    },
-  ],
-};
-
-const frontend: ISkill.Skill = {
-  category: 'Front-end',
-  items: [
-    {
-      title: 'Next.js',
-      level: 2,
-    },
-    {
-      title: 'React.js',
-      level: 2,
-    },
-    {
-      title: 'javascript',
-      level: 2,
-    },
-    {
-      title: 'HTML/CSS',
       level: 2,
     },
   ],
@@ -78,13 +52,7 @@ const etc: ISkill.Skill = {
   category: 'Etc',
   items: [
     {
-      title: 'Ubuntu',
-    },
-    {
-      title: 'Vim',
-    },
-    {
-      title: 'Security',
+      title: 'Git',
     },
     {
       title: 'VS Code',
@@ -100,7 +68,7 @@ const etc: ISkill.Skill = {
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [backend, database, frontend, etc],
+  skills: [backend, database, etc],
   tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
 
