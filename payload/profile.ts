@@ -20,13 +20,13 @@ const profile: IProfile.Payload = {
       icon: faEnvelope,
     },
     {
-      title: 'Please contact me by email',
+      title: '010-2980-0196',
       icon: faPhone,
       badge: true,
     },
     {
-      title: '정비중입니다..',
-      link: '',
+      title: 'https://github.com/raeseong',
+      link: 'https://github.com/raeseong',
       icon: faGithub,
     },
     {
@@ -42,7 +42,7 @@ const profile: IProfile.Payload = {
     },
   ],
   notice: {
-    title: '이메일로 연락주시기 바랍니다.',
+    title: '',
     icon: faBell,
   },
 };
