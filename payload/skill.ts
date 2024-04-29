@@ -38,11 +38,11 @@ const database: ISkill.Skill = {
       level: 3,
     },
     {
-      title: 'Redis',
-      level: 2,
+      title: 'MongoDB',
+      level: 3,
     },
     {
-      title: 'MongoDB',
+      title: 'Redis',
       level: 2,
     },
   ],
@@ -53,9 +53,6 @@ const etc: ISkill.Skill = {
   items: [
     {
       title: 'Git',
-    },
-    {
-      title: 'VS Code',
     },
     {
       title: 'Jira',

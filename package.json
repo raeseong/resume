@@ -1,6 +1,6 @@
 {
   "name": "resume",
-  "lastestUpdatedAt": "2023-08-18",
+  "lastestUpdatedAt": "2024-01-01",
   "version": "1.2.0",
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
@@ -27,16 +27,6 @@
     "resume",
     "next"
   ],
-  "author": {
-    "name": "Yowu Yu",
-    "email": "me@yowu.dev",
-    "url": "https://yowu.dev"
-  },
-  "contributors": [],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/uyu423/resume-nextjs/issues"
-  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
@@ -47,6 +37,7 @@
     "bootstrap": "^4.6.0",
     "chalk": "^4.1.2",
     "debug": "^4.3.2",
+    "dependencies": "^0.0.1",
     "jquery": "^3.6.0",
     "luxon": "^1.28.0",
     "next": "^10.2.3",
