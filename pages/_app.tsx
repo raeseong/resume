@@ -7,7 +7,7 @@ import { NextComponentType } from 'next';
 
 config.autoAddCss = false;
 
-export default function YosumeApp({
+export default function resumeApp({
   Component,
   pageProps,
 }: {

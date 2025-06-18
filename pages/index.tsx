@@ -13,13 +13,12 @@ import { Skill } from '../component/skill';
 import { Style } from '../component/common/Style';
 import Payload from '../payload';
 
-function Yosume() {
+function resume() {
   return (
     <>
       <NextSeo {...Payload._global.seo} />
       <Head>
         <title>{Payload._global.headTitle}</title>
-        <link rel="shortcut icon" href={Payload._global.favicon} />
       </Head>
       <Container style={Style.global}>
         <Profile.Component payload={Payload.profile} />
@@ -38,4 +37,4 @@ function Yosume() {
   );
 }
 
-export default Yosume;
+export default resume;

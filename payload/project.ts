@@ -3,31 +3,46 @@ import { IProject } from '../component/project/IProject';
 const project: IProject.Payload = {
   disable: false,
   list: [
-    // {
-    //   title: '리뷰 시스템 구현',
-    //   startedAt: '2023-09',
-    //   endedAt: '2023-11',
-    //   where: '다윈프로퍼티',
-    //   descriptions: [
-    //     { content: '리뷰 생성 및 관리하는 기능 개발' },
-    //     { content: '리뷰 관련 기능이 트리거가 되는 기존 코드에 이식' },
-    //     { content: '상담, 계약에 따른 리뷰요청 발생 및 발생된 리뷰요청을 관리해서 실제 리뷰가 쌓이고 있는 중' },
-    //   ],
-    // },
+    {
+      title: '외주작업',
+      startedAt: '2025-01',
+      endedAt: '2025-06',
+      where: '다윈프로퍼티',
+      descriptions: [
+        { content: '전시회 이벤트 페이지 개발' },
+        { content: '온라인 학원 사이트 개발 및 유지보수' },
+      ],
+    },
+    {
+      title: '어드민 페이지 개발 및 운영',
+      startedAt: '2024-04',
+      endedAt: '2024-12',
+      where: '다윈프로퍼티',
+      descriptions: [
+        { content: '사이트 내부 관리자 페이지 개발' },
+        { content: '' },
+      ],
+    },
+    {
+      title: '내부 라이브러리 개발',
+      startedAt: '2024-01',
+      endedAt: '2024-03',
+      where: '다윈프로퍼티',
+      descriptions: [
+        { content: 'msa 환경을 시도하다보니 각 서비스별 공통으로 필요로하는 기능이 많아짐' },
+        { content: 'db 커넥션 관리, 로깅, 트랜잭션 관리 등 공통 기능 개발' },
+      ],
+    },
     {
       title: '결제 시스템 구현',
       startedAt: '2022-09',
       endedAt: '2023-01',
       where: '다윈프로퍼티',
       descriptions: [
-        { content: '새로운 상품에 대한 정기 자동 결제 시스템 필요' },
+        { content: '정기 자동 결제 시스템 구축' },
         {
           content:
-            '상품, 결제, 할인 등의 복합적인 구조를 감안하여 설계하고 특정 시점에 여러 태스크가 처리되기도 해서 메세지 큐 활용',
-        },
-        {
-          content:
-            '현재 특정 상품을 매월 결제하고 있는 유저들이 있고, 새로운 결제 유저도 계속해서 발생. 결제 취소 및 상품 해지 유저도 존재',
+            '상품, 결제, 할인 등의 복합적인 구조를 감안하여 설계하고 특정 시점에 여러 태스크가 처리될 때 부하를 줄이기 위해 메세지 큐 활용',
         },
       ],
     },
