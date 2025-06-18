@@ -1,14 +1,13 @@
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import image from '../asset/prs.png';
 import { IProfile } from '../component/profile/IProfile';
 
 const profile: IProfile.Payload = {
   disable: false,
 
   // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
-  image,
+  image: '/prs.png',
   name: {
     title: '박래성',
     small: 'prs',
@@ -29,22 +28,22 @@ const profile: IProfile.Payload = {
       link: 'https://github.com/raeseong',
       icon: faGithub,
     },
-    {
-      title: '',
-      link: '',
-      icon: faFacebook,
-    },
-    {
-      title: '',
-      link: '',
-      // icon: faRss,
-      icon: faYoutube,
-    },
+    // {
+    //   title: '',
+    //   link: '',
+    //   icon: faFacebook,
+    // },
+    // {
+    //   title: '',
+    //   link: '',
+    //   // icon: faRss,
+    //   icon: faYoutube,
+    // },
   ],
-  notice: {
-    title: '',
-    icon: faBell,
-  },
+  // notice: {
+  //   title: '',
+  //   icon: faBell,
+  // },
 };
 
 export default profile;

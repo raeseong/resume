@@ -1,12 +1,9 @@
-import favicon from '../asset/favicon.ico';
-import previewImage from '../asset/preview.jpg';
 import { IGlobal } from '../component/common/IGlobal';
 
 const title = 'RESUME: RaeSeong Park';
 const description = 'This is a simple web resume sample.';
 
 export const _global: IGlobal.Payload = {
-  favicon,
   headTitle: title,
   seo: {
     title,
@@ -16,7 +13,7 @@ export const _global: IGlobal.Payload = {
       description,
       images: [
         {
-          url: previewImage,
+          url: '/preview.jpg',
           width: 800,
           height: 600,
           alt: 'OpenGraph Image Sample.png',
