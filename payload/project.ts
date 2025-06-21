@@ -11,6 +11,7 @@ const project: IProject.Payload = {
       descriptions: [
         { content: '전시회 이벤트 페이지 개발' },
         { content: '온라인 학원 사이트 개발 및 유지보수' },
+        { content: '6건의 통계 api 및 추가 api 호출 화면 로딩 속도 개선(캐시 적용 및 비동기 작업으로 각 api별 응답 시간 최대 10배 감소)' },
       ],
     },
     {
@@ -20,7 +21,7 @@ const project: IProject.Payload = {
       where: '다윈프로퍼티',
       descriptions: [
         { content: '사이트 내부 관리자 페이지 개발' },
-        { content: '' },
+        { content: '사용성 개선 및 자동화를 통해 휴먼 에러 70% 감소' },
       ],
     },
     {
@@ -30,7 +31,9 @@ const project: IProject.Payload = {
       where: '다윈프로퍼티',
       descriptions: [
         { content: 'msa 환경을 시도하다보니 각 서비스별 공통으로 필요로하는 기능이 많아짐' },
-        { content: 'db 커넥션 관리, 로깅, 트랜잭션 관리 등 공통 기능 개발' },
+        { content: 'lambda connector, db 커넥션 관리, 로깅, 트랜잭션 관리 등 공통 기능 개발' },
+        { content: '내부 서비스간 통신 비용 40% 감소(요청 응답 속도 반으로 감소 및 불필요 DB 커넥션 제거 등)' },
+        { content: '코드 유지보수 용이성 향상' },
       ],
     },
     {
@@ -40,10 +43,8 @@ const project: IProject.Payload = {
       where: '다윈프로퍼티',
       descriptions: [
         { content: '정기 자동 결제 시스템 구축' },
-        {
-          content:
-            '상품, 결제, 할인 등의 복합적인 구조를 감안하여 설계하고 특정 시점에 여러 태스크가 처리될 때 부하를 줄이기 위해 메세지 큐 활용',
-        },
+        { content: '상품, 결제, 할인 등의 복합적인 구조를 감안하여 설계하고 특정 시점에 여러 태스크가 처리될 때 부하를 줄이기 위해 메세지 큐 활용' },
+        { content: '동시 처리 부하' },
       ],
     },
     {
@@ -57,10 +58,6 @@ const project: IProject.Payload = {
             '기존에 채팅 기능이 있었지만 사용되지 않아서 문제 원인을 파악하고 앞으로 사용할 채팅에 필요한 기능 정리',
         },
         { content: '채팅 기능을 하는 microservice를 생성하고, 기존 채팅코드는 deprecated' },
-        {
-          content:
-            '새로운 채팅 코드 적용 후, 채팅 사용 유저가 증가했고 관련 로그 및 통계를 확인할 수 있어서 분석 및 마케팅 활용에 용이',
-        },
       ],
     },
     {

@@ -66,7 +66,7 @@ const etc: ISkill.Skill = {
 const skill: ISkill.Payload = {
   disable: false,
   skills: [backend, database, etc],
-  tooltip: '1: 기초 수준\n2: 천천히 개발 가능한 수준\n3: Production 개발 가능 수준',
+  tooltip: '3: 주도적 설계 및 개발 가능한 수준\n2: 도움받아 개발 가능한 수준\n1: 기초 수준',
 };
 
 export default skill;
