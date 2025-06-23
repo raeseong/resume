@@ -14,7 +14,7 @@ const profile: IProfile.Payload = {
   },
   contact: [
     {
-      title: 'qwbsy@daum.net',
+      title: 'raeseong0196@gmail.com',
       link: '#',
       icon: faEnvelope,
     },
@@ -23,11 +23,11 @@ const profile: IProfile.Payload = {
       icon: faPhone,
       badge: true,
     },
-    {
-      title: 'https://github.com/raeseong',
-      link: 'https://github.com/raeseong',
-      icon: faGithub,
-    },
+    // {
+    //   title: 'https://github.com/raeseong',
+    //   link: 'https://github.com/raeseong',
+    //   icon: faGithub,
+    // },
     // {
     //   title: '',
     //   link: '',

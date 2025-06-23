@@ -21,7 +21,18 @@ export default function ExperienceRow({
           <i style={Style.gray}>{item.position}</i>
           <ul className="pt-3">
             {item.descriptions.map((description, descIndex) => (
-              <li key={descIndex.toString()}>{description}</li>
+              <li key={descIndex.toString()}>
+                {description.main}
+                {description.subItems && description.subItems.length > 0 && (
+                  <ul style={{ marginTop: '0.5rem', marginBottom: '0.5rem' }}>
+                    {description.subItems.map((subItem, subIndex) => (
+                      <li key={subIndex.toString()} style={{ fontSize: '0.9em', color: '#666' }}>
+                        {subItem}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
             ))}
             {createSkillKeywords(item.skillKeywords)}
           </ul>

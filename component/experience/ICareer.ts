@@ -28,7 +28,6 @@ export declare namespace ICareer {
      * @format YYYY-MM
      * @example "2018-02"
      */
-
     startedAt: string;
     /**
      * ### (직장)경험 종료 일
@@ -37,22 +36,25 @@ export declare namespace ICareer {
      * @example "2021-02"
      * @description 해당 값이 undefined 일 경우 **"재직 중"** 뱃지가 추가로 나타난다.
      */
-
     endedAt?: string;
     /**
      * ### (직장)경험 설명
      *
-     * @description 하나의 `string` 요소가 `<ul>` 태그 안의 `<li>` 가 된다.
-     * @todo `IRow.Description[]` 으로 변경
+     * @description 각 항목은 메인 설명과 하위 설명을 포함할 수 있습니다.
      */
-
-    descriptions: string[];
+    descriptions: DescriptionItem[];
     /**
      * ### (직장)경험의 키워드
      *
      * @description undefined 가 아닐 경우 해당 경험 하단에 **Skill Keywords** 목록이 추가된다.
      */
-
     skillKeywords?: string[];
+  }
+
+  export interface DescriptionItem {
+    /** ### 메인 설명 */
+    main: string;
+    /** ### 하위 설명 목록 (선택사항) */
+    subItems?: string[];
   }
 }

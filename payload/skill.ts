@@ -1,49 +1,55 @@
 import { ISkill } from '../component/skill/ISkill';
 
 const backend: ISkill.Skill = {
-  category: 'Back-end',
+  category: '실무에 바로 적용 가능한 기술',
   items: [
     {
       title: 'Node.js',
-      level: 3,
     },
     {
       title: 'TypeScript',
-      level: 3,
     },
     {
       title: 'AWS',
-      level: 2,
     },
     {
-      title: 'Java',
-      level: 2,
+      title: 'MySQL',
     },
     {
-      title: 'Python',
-      level: 1,
+      title: 'Express.js',
     },
     {
-      title: 'C/C++',
-      level: 1,
+      title: 'MongoDB',
+    },
+    {
+      title: 'Redis',
+    },
+    {
+      title: 'Docker',
     },
   ],
 };
 
 const database: ISkill.Skill = {
-  category: 'Database',
+  category: '사용해본 경험이 있는 기술',
   items: [
     {
-      title: 'MySQL',
-      level: 3,
+      title: 'JAVA',
     },
     {
-      title: 'MongoDB',
-      level: 3,
+      title: 'Kotlin',
     },
     {
-      title: 'Redis',
-      level: 2,
+      title: 'Spring Boot',
+    },
+    {
+      title: 'Python',
+    },
+    {
+      title: 'Nest.js',
+    },
+    {
+      title: 'Next.js',
     },
   ],
 };
@@ -65,7 +71,7 @@ const etc: ISkill.Skill = {
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [backend, database, etc],
+  skills: [backend, database],
   tooltip: '3: 주도적 설계 및 개발 가능한 수준\n2: 도움받아 개발 가능한 수준\n1: 기초 수준',
 };
 

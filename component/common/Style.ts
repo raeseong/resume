@@ -38,7 +38,7 @@ export const Style: Record<TStyleKey, CSSProperties> = {
   },
 
   footerCover: {
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#ffffff',
     paddingLeft: 0,
     paddingRight: 0,
     marginTop: '50px',
