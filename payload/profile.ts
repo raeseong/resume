@@ -10,7 +10,6 @@ const profile: IProfile.Payload = {
   image: 'prs.png',
   name: {
     title: '박래성',
-    small: 'prs',
   },
   contact: [
     {
