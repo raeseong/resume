@@ -1,9 +1,10 @@
 import { DateTime } from 'luxon';
 import { PropsWithChildren } from 'react';
-import { CommonRows } from '../common/CommonRow';
+import { Row, Col } from 'reactstrap';
 import { IRow } from '../common/IRow';
 import Util from '../common/Util';
 import { EmptyRowCol } from '../common';
+import { CommonDescription } from '../common/CommonDescription';
 import { IPresentation } from './IPresentation';
 
 export default function PresentationRow({
@@ -12,21 +13,26 @@ export default function PresentationRow({
   return (
     <EmptyRowCol>
       {payload.list.map((item, index) => {
-        return <CommonRows key={index.toString()} payload={serialize(item)} index={index} />;
+        return (
+          <div key={index.toString()}>
+            {index > 0 ? <hr /> : ''}
+            <Row>
+              <Col sm={12}>
+                {item.title ? <h4>{item.title}</h4> : ''}
+                {item.subTitle ? <i style={{ color: '#868e96' }}>{item.subTitle}</i> : ''}
+                {item.descriptions ? (
+                  <CommonDescription
+                    descriptions={item.descriptions}
+                    option={{ padding: !!(item.title || item.subTitle) }}
+                  />
+                ) : (
+                  ''
+                )}
+              </Col>
+            </Row>
+          </div>
+        );
       })}
     </EmptyRowCol>
   );
-}
-
-function serialize(item: IPresentation.Item): IRow.Payload {
-  return {
-    left: {
-      title: DateTime.fromFormat(item.at, Util.LUXON_DATE_FORMAT.YYYY_LL).toFormat(
-        Util.LUXON_DATE_FORMAT.YYYY_DOT_LL,
-      ),
-    },
-    right: {
-      ...item,
-    },
-  };
 }

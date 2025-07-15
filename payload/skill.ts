@@ -49,7 +49,7 @@ const database: ISkill.Skill = {
       title: 'Nest.js',
     },
     {
-      title: 'Next.js',
+      title: 'Next.js(React)',
     },
   ],
 };

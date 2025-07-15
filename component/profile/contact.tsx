@@ -8,12 +8,12 @@ export default function ProfileContact({
   payload,
 }: PropsWithChildren<{ payload: IProfile.Contact }>) {
   return (
-    <Row className="pb-2">
-      <Col xs={1} className="text-right">
+    <div className="pb-2 d-flex align-items-center">
+      <span style={{ width: '20px', textAlign: 'center', marginRight: '15px', marginLeft: '10px' }}>
         <FontAwesomeIcon icon={payload.icon} />
-      </Col>
-      <Col xs="auto">{createLink(payload)}</Col>
-    </Row>
+      </span>
+      <span>{createLink(payload)}</span>
+    </div>
   );
 }
 

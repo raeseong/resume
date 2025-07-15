@@ -18,13 +18,13 @@ export const Introduce = {
 };
 
 function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
-  const latestUpdated = DateTime.fromFormat(
+  const latestUpdated = payload.latestUpdated ? DateTime.fromFormat(
     payload.latestUpdated,
     Util.LUXON_DATE_FORMAT.YYYY_LL_DD,
-  );
-  const latestUpdatedByNow = Math.floor(
+  ) : null;
+  const latestUpdatedByNow = latestUpdated ? Math.floor(
     DateTime.local().diff(latestUpdated).milliseconds / 1000 / 60 / 60 / 24,
-  );
+  ) : null;
 
   return (
     <div className="mt-5">
@@ -37,12 +37,16 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
             <p key={index.toString()}>{content}</p>
           ))}
           <p className="text-right">
-            <small>Latest Updated</small>{' '}
-            <Badge color="secondary">
-              {`${latestUpdated.toFormat(
-                Util.LUXON_DATE_FORMAT.YYYY_DOT_LL_DOT_DD,
-              )} (D+${latestUpdatedByNow})`}
-            </Badge>
+            {latestUpdated && (
+              <>
+                <small>Latest Updated</small>{' '}
+                <Badge color="secondary">
+                  {`${latestUpdated.toFormat(
+                    Util.LUXON_DATE_FORMAT.YYYY_DOT_LL_DOT_DD,
+                  )} (D+${latestUpdatedByNow})`}
+                </Badge>
+              </>
+            )}
           </p>
           <p className="text-right" style={Style.sign}>
             {payload.sign}
